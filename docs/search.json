@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "files/RomanDoolan/data_readme.html",
+    "href": "files/RomanDoolan/data_readme.html",
+    "title": "Data Processing Readme",
+    "section": "",
+    "text": "This paper presents a new interpretation of the experimental data obtained by Roman Kisler for his PhD. All Roman’s data are kept here:-&gt; smb://engpnns001.ad.unsw.edu.au/Fluid Mechanics Research/DAVIS_SHARED/My Projects/UNSW/AWT/Roman\nA subset of Roman’s data is used for this paper. An explanation of how the data was processed is below.\nThere are two folders at the top:-&gt;\nLeadingEdge:-&gt; USP: main data extraction codes Roman_Hotwire: hot wire data processing Roman_Mean_Pressure: surface mean pressure processing\nPlotting_Matlab:-&gt; Contains the codes that process the data further as per the methods in the paper and produces most of trhe figures in theg paper. Full descriptions are below.\n\nAll codes are run in matlab.\nrun NEW_main__calib_and_analyse_USP.m\n\nThis reads experimental data taken by Roman Kisler for his PhD.\nThis reads the raw data and calibration data and produces two very big files:\nThis one creates the pressure jump spectra data: USP_savefile = “G_dpdp_Grid”+grids(igrids)+“_2DAirfoil_ZPG_AoA”+aoas(iaoas)+“_U”+speeds(ispeeds)+“.mat”; save(USP_savefile, ‘freq’,‘Pxx_calibrated’, ‘C_xy_calibrated’,‘G_dpdp’,‘Coh_jump’, ‘Coh_SS’,‘Coh_PS’,‘Phase_xy’,‘coh_length_PS’,‘coh_length_SS’, ‘aoas’, ‘grids’, ‘speeds’,‘pressure_taps’,‘tap_no_SS’,‘tap_no’)\nThis one creates the RMS data:\nRMS_savefile = “RMS_Grid”+grids(igrids)+“_2DAirfoil_ZPG_AoA”+aoas(iaoas)+“_U”+speeds(ispeeds)+“.mat”; save(RMS_savefile, ‘freq’, ‘p_rms_avg’, ‘Lp_rms_avg’, ‘LPJ_rms_avg’,‘unit_G_pp’, ‘aoas’, ‘grids’, ‘speeds’,‘pressure_taps’,‘tap_no_SS’)\n\nTo obtain the surface Cp data, run:-&gt; Panel_vs_exp.m\n\nThis will read the experimental data and create an eps file comparing a panel method calculation with the measurement (Figure 2 of paper).\n\nThe hot wire data presented in Fig 4 is created be running:-&gt; Roman_HW_plot.m\nFigure 5: rms of each tap vs x/c:-&gt; RMS_plot_USPx_c.m\nFigure 6: pressure jump rms vs x/c:-&gt; RMSGDP_plot_USPx_c.m\nFigure 7: experimental pressure jump psd:-&gt; Gdpdp_plot.m\nFigures 8 and 9: experimental pressure jump psd compared with Amiet theory:-&gt;Gdpdp_AMIET_plot.m\nFigures 10 and 11: framework parameters:-&gt; Frame_plot.m\nFigure 12: phase jump measurements and model:-&gt; PhasePJ_plot.m and pjump_model.m\nFig 13: phase across airfoil vs wavenumber with model:-&gt; PhasePJ_plot.m\nFig 14: Experimental coherence and fitted model:-&gt; COH_plot.m\nFig 15: Coherence parameters and models:-&gt; plot_stats.m"
+  },
+  {
+    "objectID": "files/CV_OLD.html",
+    "href": "files/CV_OLD.html",
+    "title": "Short CV",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code",
+    "section": "",
+    "text": "Codes: coming soon"
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
+    "title": "Publications",
+    "section": "",
+    "text": "All my publicatons can be found in Google Scholar or Orcid.\nSome publications, manuscripts and presentations of interest are listed here."
+  },
+  {
+    "objectID": "papers.html#measurement-and-analysis-of-unsteady-surface-pressure-during-turbulenceairfoil-interaction",
+    "href": "papers.html#measurement-and-analysis-of-unsteady-surface-pressure-during-turbulenceairfoil-interaction",
+    "title": "Publications",
+    "section": "Measurement and Analysis of Unsteady Surface Pressure During Turbulence–Airfoil Interaction",
+    "text": "Measurement and Analysis of Unsteady Surface Pressure During Turbulence–Airfoil Interaction\nPublication link\ngithub repo"
+  },
+  {
+    "objectID": "papers.html#presentation-leading-edge-noise-from-a-finite-wall-mounted-airfoil-immersed-in-a-turbulent-boundary-layer-fssic-2025-canada",
+    "href": "papers.html#presentation-leading-edge-noise-from-a-finite-wall-mounted-airfoil-immersed-in-a-turbulent-boundary-layer-fssic-2025-canada",
+    "title": "Publications",
+    "section": "Presentation: Leading edge noise from a finite wall-mounted airfoil immersed in a turbulent boundary layer (FSSIC 2025, Canada)",
+    "text": "Presentation: Leading edge noise from a finite wall-mounted airfoil immersed in a turbulent boundary layer (FSSIC 2025, Canada)\nFSSIC 2025\ngithub repo"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Con Doolan’s Website",
+    "section": "",
+    "text": "Prof Con Doolan works in the School of Mechanical and Manufacturing Engineering at UNSW Sydney.\nHe leads the Flow Noise group at UNSW and is an expert in aeroacoustics."
+  },
+  {
+    "objectID": "res_papers.html",
+    "href": "res_papers.html",
+    "title": "Research Publications",
+    "section": "",
+    "text": "Here are some papers with full docs"
+  },
+  {
+    "objectID": "files/CV.html",
+    "href": "files/CV.html",
+    "title": "Short CV",
+    "section": "",
+    "text": "Professor Con Doolan has an honours degree in Mechanical Engineering and a PhD in Aerospace Engineering from the University of Queensland. After working at the University of Glasgow, Department of Defence (Australia) and University of Adelaide, he is now a Professor at the University of New South Wales, Sydney. Professor Doolan founded and leads the Flow Noise Group, a world leader in aeroacoustics, which concerns the measurement, prediction and control of noise produced by fluid flow.\nProf Doolan has held senior leadership roles, the most recent being Director of Postgraduate Research Examinations (Engineering) and Associate Dean (Education) for UNSW Engineering. I have recently completed the UNSW Senior Leaders Program (2025) and have been involved with external accreditation for national and international universities."
+  },
+  {
+    "objectID": "files/CV.html#bio",
+    "href": "files/CV.html#bio",
+    "title": "Short CV",
+    "section": "",
+    "text": "Professor Con Doolan has an honours degree in Mechanical Engineering and a PhD in Aerospace Engineering from the University of Queensland. After working at the University of Glasgow, Department of Defence (Australia) and University of Adelaide, he is now a Professor at the University of New South Wales, Sydney. Professor Doolan founded and leads the Flow Noise Group, a world leader in aeroacoustics, which concerns the measurement, prediction and control of noise produced by fluid flow.\nProf Doolan has held senior leadership roles, the most recent being Director of Postgraduate Research Examinations (Engineering) and Associate Dean (Education) for UNSW Engineering. I have recently completed the UNSW Senior Leaders Program (2025) and have been involved with external accreditation for national and international universities."
+  },
+  {
+    "objectID": "files/CV.html#contact-details",
+    "href": "files/CV.html#contact-details",
+    "title": "Short CV",
+    "section": "Contact Details",
+    "text": "Contact Details\nSchool of Mechanical and Manufacturing Engineering UNSW Sydney, NSW, Australia, 2052\nEmail: c.doolan@unsw.edu.au\nUNSW Gateway: https://research.unsw.edu.au/people/professor-con-doolan"
+  },
+  {
+    "objectID": "files/CV.html#education",
+    "href": "files/CV.html#education",
+    "title": "Short CV",
+    "section": "Education",
+    "text": "Education\n1997: Ph.D. (Aerospace Engineering) School of Mechanical Engineering, University of Queensland\n1992: BE Hons 1 (Mechanical and Space Engineering) School of Mechanical Engineering, University of Queensland"
+  },
+  {
+    "objectID": "files/CV.html#professional-experience",
+    "href": "files/CV.html#professional-experience",
+    "title": "Short CV",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n2018-Present: Professor School of Mechanical and Manufacturing Engineering UNSW Sydney\n2015-2017: Associate Professor\nSchool of Mechanical and Manufacturing Engineering UNSW Sydney\n2005-2014: Lecturer - Associate Professor\nSchool of Mechanical Engineering The University of Adelaide\n2000-2005: Research Scientist\nWeapons Systems Division The Defence Science and Technology Organisation (South Australia)\n1998-2000: Research Fellow\nDepartment of Aerospace Engineering The University of Glasgow (UK)\n1997: Research Engineer\nSugar Research Institute (Mackay QLD)"
+  },
+  {
+    "objectID": "files/CV.html#publications",
+    "href": "files/CV.html#publications",
+    "title": "Short CV",
+    "section": "Publications",
+    "text": "Publications\nGoogle Scholar Page https://scholar.google.com/citations?user=IQULbjsAAAAJ&hl=en\nORCID Page https://orcid.org/0000-0002-1261-6035"
+  },
+  {
+    "objectID": "files/CV.html#hdr-supervision",
+    "href": "files/CV.html#hdr-supervision",
+    "title": "Short CV",
+    "section": "HDR Supervision",
+    "text": "HDR Supervision\n11 Current\n\n34 Completed"
+  },
+  {
+    "objectID": "files/CV.html#teaching",
+    "href": "files/CV.html#teaching",
+    "title": "Short CV",
+    "section": "Teaching",
+    "text": "Teaching\nUNSW Sydney: Aerodynamics (AERO3630)\nUniversity of Adelaide: Advanced Topics in Aerospace Engineering"
+  },
+  {
+    "objectID": "files/CV.html#recent-funding",
+    "href": "files/CV.html#recent-funding",
+    "title": "Short CV",
+    "section": "Recent Funding",
+    "text": "Recent Funding\nThe Mechanics of Quiet Ducted Propellers in Distorted Inflows: ARC DP260104381\nThe Dynamics of Foil Tip Gap Flows, Office of Naval Research: NICOP Award N62909-23-1-2100, 2024-2026\nDigital Engineering for Device-on-Demand, Next Generation Graduates Program (CSIRO): 2021-2026\nBREATHE - mitigating airborne threats to health, NHMRC Centre of Research Excellence: 2021-2026, GNT2006595\nAerosol transmission of SARS-CoV-2 experimentally and in an intensive care setting: Medical Research Future Fund (MRFF), 2022-2025, MRF2017048\nAirfoil Noise Control in Complex Turbulence: ARC DP210102288\nUnderstanding and predicting airfoil noise in real-world turbulence: ARC DP200101626"
+  }
+]
